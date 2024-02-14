@@ -1,0 +1,990 @@
+:root{
+    --main-color: #343434;
+    --main-f-w: 100;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navbar section */
+.navbar-brand{
+    font-size: 18px;
+    font-weight: 800;
+    color: #1C1C1C !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 30px;
+    color: RGB(17, 17, 17);
+    font-family:'Poppins', sans-serif;
+  }
+.navbar-expand-lg .navbar-nav .nav-link.active::after{
+    left: 30px;
+    opacity: 1;
+  }
+.navbar-expand-lg .navbar-nav .nav-link::after{
+    transition: all 0.6s;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60%;
+    background-color: RGB(17, 17, 17);
+    top: 29px;
+    left: -30px;
+    opacity: 0;
+  } 
+  /* home section */
+#home{
+    background-image: url(../images/bg.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+#home .overlay-home{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#home .overlay-home .container{
+    height: 100%;
+}
+#home .home-caption .icons span{
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+#home .overlay-home .container .home-caption h4{
+    font-size: 50px;
+    font-weight: 800;
+    
+    
+}
+
+
+/* ANIMATION */
+.anim{
+    font-size: 44px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+.iam{
+    padding: 8.8px 0px;
+    font-size: 44px;
+    font-family: 'Montserrat', sans-serif;
+}
+#home .anim::after{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes typing{
+    0%{
+        content:"L|"
+    }
+    1.18%{
+        content:"La|"
+    }
+    2.36%{
+        content:"Lar|"
+    }
+    3.54%{
+        content:"Larr|"
+    }
+    4.72%{
+        content:"Larry|"
+    }
+    5.9%{
+        content:"Larry D|"
+    }
+    7.08%{
+        content:"Larry Da|"
+    } 
+    8.26%{
+        content:"Larry Dan|"
+    }
+    9.44%{
+        content:"Larry Dani|"
+    }
+    10.62%{
+        content:"Larry Danie|"
+    }
+    11.8%{
+        content:"Larry Daniel|"
+    }
+    12.98%{
+        content:"Larry Daniels|"
+    }
+    24.94%{
+        content:"Larry Daniels|"
+    }
+    26.12%{
+        content:"Larry Daniel|"
+    }
+    27.3%{
+        content:"Larry Danie|"
+    }
+    28.48%{
+        content:"Larry Dani|"
+    }
+    29.66%{
+        content:"Larry Dan|"
+    }
+    30.84%{
+        content:"Larry Da|"
+    }
+    32.02%{
+        content:"Larry D|"
+    }
+    33.2%{
+        content:"Larry |"
+    }
+    34.38%{
+        content:"Larr|"
+    }
+    35.56%{
+        content:"Lar|"
+    }
+    36.74%{
+        content:"La|"
+    }
+    37.92%{
+        content:"L|"
+    }
+    39.1%{
+        content:"|"
+    }
+    40.28%{
+        content:"D|"
+    }
+    41.46%{
+        content:"De|"
+    }
+    42.64%{
+        content:"Dev|"
+    }
+    43.82%{
+        content:"Deve|"
+    }
+    45%{
+        content:"Devel|"
+    }
+    46.18%{
+        content:"Develo|"
+    }
+    47.36%{
+        content:"Develop|"
+    }
+    48.54%{
+        content:"Develope|"
+    }
+    49.72%{
+        content:"Developer|"
+    }
+    61.68%{
+        content:"Developer|"
+    }
+    62.86%{
+        content:"Develope|"
+    }
+    64.04%{
+        content:"Develop|"
+    }
+    65.22%{
+        content:"Develo|"
+    }
+    66.4%{
+        content:"Devel|"
+    }
+    67.58%{
+        content:"Deve|"
+    }
+    68.76%{
+        content:"Dev|"
+    }
+    69.94%{
+        content:"De|"
+    }
+    71.12%{
+        content:"D|"
+    }
+    72.3%{
+        content:"|"
+    }
+    73.48%{
+        content:"D|"
+    }
+    74.66%{
+        content:"De|"
+    }
+    75.84%{
+        content:"Des|"
+    }
+    77.02%{
+        content:"Desi|"
+    }
+    78.2%{
+        content:"Desig|"
+    }
+    79.38%{
+        content:"Design|"
+    }
+    80.56%{
+        content:"Designe|"
+    }
+    81.74%{
+        content:"Designer|"
+    }
+    90%{
+        content:"Designer|"
+    }
+    91.1%{
+        content:"Designe|"
+    }
+    92.2%{
+        content:"Design|"
+    }
+    93.3%{
+        content:"Desig|"
+    }
+    94.4%{
+        content:"Desi|"
+    }
+    95.5%{
+        content:"Des|"
+    }
+    96.6%{
+        content:"De|"
+    }
+    97.7%{
+        content:"D|"
+    }
+    98.8%{
+        content:"|"
+    }
+    100%{
+        content:"|"
+    }
+
+}
+/* #home .home-animation{
+    position: absolute;
+    top: 43%;
+    left: 33%;
+} */
+/* #home .home-animation::after{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    font-size: 60px;
+    font-weight: 400;
+    padding-left: 8px;
+} */
+/* @keyframes typing{
+    0%{
+        content:"L|"
+    }
+    1.18%{
+        content:"La|"
+    }
+    2.36%{
+        content:"Lar|"
+    }
+    3.54%{
+        content:"Larr|"
+    }
+    4.72%{
+        content:"Larry|"
+    }
+    5.9%{
+        content:"Larry D|"
+    }
+     7.08%{
+        content:"Larry Da|"
+    } 
+    8.26%{
+        content:"Larry Dan|"
+    }
+    9.44%{
+        content:"Larry Dani|"
+    }
+    10.62%{
+        content:"Larry Danie|"
+    }
+    11.8%{
+        content:"Larry Daniel|"
+    }
+    12.98%{
+        content:"Larry Daniels|"
+    }
+    24.94%{
+        content:"Larry Daniels|"
+    }
+    26.12%{
+        content:"Larry Daniel|"
+    }
+    27.3%{
+        content:"Larry Danie|"
+    }
+    28.48%{
+        content:"Larry Dani|"
+    }
+    29.66%{
+        content:"Larry Dan|"
+    }
+    30.84%{
+        content:"Larry Da|"
+    }
+    32.02%{
+        content:"Larry D|"
+    }
+    33.2%{
+        content:"Larry |"
+    }
+    34.38%{
+        content:"Larr|"
+    }
+    35.56%{
+        content:"Lar|"
+    }
+    36.74%{
+        content:"La|"
+    }
+    37.92%{
+        content:"L|"
+    }
+    39.1%{
+        content:"|"
+    }
+    40.28%{
+        content:"D|"
+    }
+    41.46%{
+        content:"De|"
+    }
+    42.64%{
+        content:"Dev|"
+    }
+    43.82%{
+        content:"Deve|"
+    }
+    45%{
+        content:"Devel|"
+    }
+    46.18%{
+        content:"Develo|"
+    }
+    47.36%{
+        content:"Develop|"
+    }
+    48.54%{
+        content:"Develope|"
+    }
+    49.72%{
+        content:"Developer|"
+    }
+    61.68%{
+        content:"Developer|"
+    }
+    62.86%{
+        content:"Develope|"
+    }
+    64.04%{
+        content:"Develop|"
+    }
+    65.22%{
+        content:"Develo|"
+    }
+    66.4%{
+        content:"Devel|"
+    }
+    67.58%{
+        content:"Deve|"
+    }
+    68.76%{
+        content:"Dev|"
+    }
+    69.94%{
+        content:"De|"
+    }
+    71.12%{
+        content:"D|"
+    }
+    72.3%{
+        content:"|"
+    }
+    73.48%{
+        content:"D|"
+    }
+    74.66%{
+        content:"De|"
+    }
+    75.84%{
+        content:"Des|"
+    }
+    77.02%{
+        content:"Desi|"
+    }
+    78.2%{
+        content:"Desig|"
+    }
+    79.38%{
+        content:"Design|"
+    }
+    80.56%{
+        content:"Designe|"
+    }
+    81.74%{
+        content:"Designer|"
+    }
+    90%{
+        content:"Designer|"
+    }
+    91.1%{
+        content:"Designe|"
+    }
+    92.2%{
+        content:"Design|"
+    }
+    93.3%{
+        content:"Desig|"
+    }
+    94.4%{
+        content:"Desi|"
+    }
+    95.5%{
+        content:"Des|"
+    }
+    96.6%{
+        content:"De|"
+    }
+    97.7%{
+        content:"D|"
+    }
+    98.8%{
+        content:"|"
+    }
+    100%{
+        content:"|"
+    }
+
+} */
+/* about section */
+#about .progress-bar span {
+    font-size: 13px;
+    font-weight: 500;
+}
+#about .progress-bar {
+    position: relative;
+}
+#about .div-button{
+        font-family:'Poppins', sans-serif;
+}
+#about .span-1::after{
+    content: "95%";
+    position: absolute;
+    left: 94%;
+}
+#about .span-2::after {
+    content: "80%";
+    position: absolute;
+    left: 93%;
+}
+#about .span-3::after {
+    content: "90%";
+    position: absolute;
+    left: 93.5%;
+}
+#about .progress-bar{
+     background-color:#1C1C1C !important;
+}
+
+.progress{
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    position: relative;
+    width: 100%;
+}
+.gray{
+    color: #748182;
+}
+.width{
+    width: 89%;
+}  
+#about .div-button .anc-1 {
+    background-color: #1C1C1C;
+    font-size: 13px;
+    padding: 10px 30px;
+    transition: all 0.5s;
+}
+#about .div-button .anc-1:hover{
+    background-color: white;
+    color: black !important;
+    border: solid 1px black;
+}
+#about .div-button .anc-2:hover{
+    background-color: #1C1C1C;
+    color: white !important;
+}
+#about .div-button .anc-2{
+    background-color: white;
+    border: solid 1px black;
+    font-size: 13px;
+    padding: 10px 30px;
+    transition: all 0.5s;
+}
+#about .col-lg-4 .pic{
+    position: relative;
+}
+#about .col-lg-4 .pic::after{
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 80%;
+    left: -7%;
+    bottom: -6%;
+    background-image: url(../images/dots.png);
+    z-index: -1;
+}
+#about h3{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--main-color);
+}
+#about p{
+    font-weight: 400;
+    font-size: 15px;
+    font-family:'Poppins', sans-serif;
+}
+#about .font{
+    font-size: 14px;
+    font-weight: 400;
+    font-family:'Poppins', sans-serif;
+}
+/* services section  */
+#services{
+    background-color: #F7F7F7;
+}
+#services h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--main-color);
+    z-index: 3;
+   width: max-content;
+}
+#services .container h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    z-index: -1;
+    }
+#services p{
+    font-size: 14px;
+    color: #748182;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+#services h3{
+    font-size: 18px;
+    font-weight: 800;
+    color:var(--main-color);
+}
+#services .icon{
+    background-color: #f4f4f4;
+    width: 70px;
+    height: 70px;
+    transition: all 0.6s;
+}
+#services .icon i{
+    font-size: 30px;
+}
+#services .layer:hover .icon{
+    background-color: #1C1C1C;
+    color: #EEEEEE;
+}
+/* work section */
+#work .include{
+    position: relative;
+    overflow: hidden;
+}
+#work .include .layer-port{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 2;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+}
+#work .include .layer-port .layer-content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    -webkit-transform: translate(0%,-50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+#work .include .layer-port .layer-content h5{
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        position: relative;
+        
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        color: var(--main-color);
+    }
+#work .include:hover .layer-port{
+    transform: translateY(0);
+    opacity: 1;
+}
+#work .include .layer-port .icons-work .icon-work{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+    font-size: 14px;
+}
+#work .include .layer-port .icons-work .icon-work a{
+    color: #eee;
+    text-decoration: none;
+}
+#work .include .layer-port .icons-work .icon-work:hover a{
+    color: #111;
+}
+#work .include .layer-port .icons-work .icon-work:hover{
+    background: #eee;
+    color: #111;
+    border: 1px solid #111;
+}
+.nav-pills .nav-link{
+    font-family:'Poppins', sans-serif;
+    font-weight: 700;
+   position: relative;
+}
+.nav-pills .nav-link.active, .nav-pills .nav-link {
+    color: RGB(34, 34, 34) !important;
+    background-color: white !important;
+}
+.nav-pills .nav-link::after{
+transition: all 0.6s;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60%;
+    background-color: #111111;
+    top: 33px;
+    left: -5px;
+    opacity: 0;
+}
+.nav-pills .nav-link.active::after{
+    left: 15px;
+    opacity: 1;
+}
+#work h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--main-color);
+    z-index: 3;
+   width: max-content;
+}
+#work .section-title h2::after{
+content: "";
+width: 100%;
+height: 30px;
+background-image: url(../images/dots.png);
+position: absolute;
+bottom: -8px;
+left: 0;
+z-index: -1;
+}
+/* testimonials section */
+#testimonials{
+    background-color: #F7F7F7;
+}
+#testimonials .test-content p{
+    font-family:'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+#testimonials .carousel-item div img{
+    width: 90px;
+    height: 90px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    text-indent: 0;
+    background-color: #d6d6d6;
+    transition: all 0.2s;
+    margin: 7px;
+    margin-top: 10px;
+}
+.carousel-indicators [data-bs-target]:hover{
+    background-color:#869791;
+    opacity: 1;
+}
+.carousel-indicators .active{
+    background-color:#869791;
+}
+#testimonials .test-content{
+    color: #748182;
+}
+#testimonials h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--main-color);
+    z-index: 3;
+   width: max-content;
+}
+#testimonials .section-title h2::after{
+content: "";
+width: 100%;
+height: 30px;
+background-image: url(../images/dots.png);
+position: absolute;
+bottom: -8px;
+left: 0;
+z-index: -1;
+}
+#testimonials h6{
+    color: var(--main-color);
+    font-weight: 600;
+}
+#testimonials .sp{
+    font-size: 12px;
+    font-weight: 600;
+}
+/* numbers section */
+#numbers .icon-num{
+    font-size: 30px;
+    color: var(--main-color);
+    font-weight: 400;
+}
+#numbers h3{
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--main-color);
+}
+#numbers p{
+    color: #748182;
+    font-weight: 600;
+    font-size: 15px;
+    font-family:'Poppins', sans-serif;
+}
+/* ====> Team Section <==== */
+#team{
+    background-color: #F7F7F7;
+}
+#team .section-title h3 {
+    font-weight: 900;
+    font-size: 40px;
+    /* margin-bottom: 90px; */
+    color: var(--main-color);
+    z-index: 3;
+    width: max-content;
+}
+#team .section-title h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    z-index: -1;
+}
+#team .img-text {
+    padding: 25px;
+    color: #fff;
+    background-color: #5b5b5b;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#team .list-inline .icon{
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #000000;
+    border: 1px solid #000;
+    color: #fff;
+}
+#team .list-inline .icon:hover{
+    background-color: #fff;
+    color: #000;
+}
+#team .list-inline .icon:hover i{
+    color: #000;
+}
+#team .social .icon i{
+    color: #fff;
+}
+#team .employee .social {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    text-align: center;
+    inset: 5px;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    padding: 5px; /* Added padding around the social element */
+    box-sizing: border-box; /* Include padding in total width and height */
+}
+#team .employee {
+    position: relative;
+    overflow: hidden;
+}
+#team .employee:hover .social {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+}
+
+#team .employee .img-team img {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#team .employee:hover .img-team img {
+    transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+#team .data:hover .social{
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+}
+
+/* *====> Contact Section <====* */
+#contact .section-title h3 {
+    font-weight: 900;
+    font-size: 40px;
+    z-index: 3;
+    width: max-content;
+    margin-bottom: 90px;
+    color: var(--main-color);
+}
+#contact .contact-body{
+    font-family:'Poppins', sans-serif;
+}
+#contact .container .section-title h3:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    z-index: -1;
+}
+#contact .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    margin: 0 auto 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .icon i {
+    font-size: 20px; 
+    color: #333; 
+}
+#contact .item-title {
+    font-size: 16px;
+    font-weight: 700; 
+    color: #343434;
+    margin-bottom: 10px;
+}
+#contact .item-desc {
+    font-size: 15px; 
+    color: #748182;
+    line-height: 1.6;
+}
+#contact .item:hover i{
+    color: #fff; 
+}
+#contact .item:hover .icon{
+    background-color: #1C1C1C ; 
+}
+#contact .form-group input{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+    background: #f4f4f4;
+}
+#contact .form-group textarea {
+    width: 100%;
+    height: 160px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+    max-height: 160px;
+    max-width: 100%;
+}
+#contact  .button {
+    padding: 10px 25px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background: #1c1c1c;
+    color: #eee;
+}
+#contact .button:hover {
+    background: #eee;
+    color: #1c1c1c;
+}
+#contact .form-group input:focus,
+#contact .form-group textarea:focus {
+    outline: none; /* Remove the default focus outline */
+    border: 0; /* Remove the border on focus */
+    box-shadow: none; /* Remove the box shadow on focus */
+}       
+/* *====> Footer Section <====* */
+#footer{    
+    padding: 32px 0px 14px;
+    background: #1c1c1c;
+    color: RGB(116, 129, 130);
+    font-size: 13px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+}
